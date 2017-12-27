@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>设置</title>
+		<link rel="stylesheet" type="text/css" href="css/commen.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shezhi.css"/>
+
+	</head>
+	<body>
+		<div class="fa">
+			<ul>
+				<li class="wode-tu"><img src="img/shezhi-1.png" /></li>
+				<li>设置</li>
+			</ul>
+	   
+		    <ul>
+				<li>更换手机号</li>
+				<li><span id="sh">
+					157****1278
+				</span></li>
+				<li><img src="img/shezhi-2.png" ></li>
+			</ul>
+		
+		</div>
+		<div class="fa-2x">
+			<ul>
+				<li>关于我们</li>
+				<li><img src="img/shezhi-2.png" ></li>
+			</ul>
+			<ul>
+				<li>清除缓存</li>
+				<li>0.0KB</li>
+				<li><img src="img/shezhi-2.png" ></li>
+			</ul>
+		</div>
+		<div class="fa-3x">
+			<ul>
+				<li>退出登录</li>
+			</ul>
+		</div>
+	</body>    
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+   <script type="text/javascript" src="js/link.js" ></script>
+    <script src="js/buju.js" type="text/javascript" charset="utf-8"></script> 
+    <script type="text/javascript">
+    	var oPP = document.getElementById('sh');
+		var ljdl = sessionStorage.getItem('shh');	
+		console.log(ljdl);
+		if(ljdl!=null){
+			oPP.innerText=ljdl;		
+		}
+				
+		
+    </script>
+</html>

@@ -1,0 +1,83 @@
+/*头部*/
+.youhui{
+	width: 7.2rem;
+	height: 1rem;
+	background-color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	z-index: 11;
+}
+
+.youhui li:nth-child(1) img{
+	width: 0.6rem;
+	height: 0.6rem;
+	margin-top: 0.2rem;
+	margin-left: 0.3rem;
+	float: left;
+}
+.youhui li:nth-child(2){
+	font-size: 0.3rem;
+	color: #272727;
+	font-weight: normal;
+	text-align: center;
+	line-height: 1rem;
+	margin-right: 0.5rem;
+}
+/*头部以下*/
+.youhuitixing{
+	margin-top: 1rem;
+	width: 7.2rem;
+	height: 35rem;
+	background-color: #EEEEEE;
+}
+.youhuitixing img{
+	height: 2.15rem;
+	width: 6.8rem;
+}
+.yhtx1{
+	width: 6.8rem;
+	height: 3.9rem;
+	margin: 0.05rem 0.2rem ;
+	font-size: 0.2rem;
+	color: #7a828d;
+	float: left;
+	
+	
+	
+}
+.yhtx1-top{
+	padding-top: 0.3rem;
+}
+.yhtx1-bottom{
+	height: 1.5rem;
+	background-color: #FFFFFF;	
+	
+}
+.yhtx1-kongxi1{
+	padding-top: 0.2rem;
+	height: 0.8rem;
+	font-size: 0.3rem;
+	color: #000000;
+	
+	
+}
+.yhtx1-wenzi{
+	padding-bottom: 0.2rem;
+	font-size: 0.25rem;
+	margin-left: 0.25rem;
+	border-bottom: 0.01rem solid #f0f1f5;
+	margin-right: 0.25rem;
+	
+}
+.yhtx1-kongxi2{
+	
+}
+.yhtx1-bian{
+	margin-left: 0.25rem;
+	margin-top: 0.2rem;
+	
+}
+.details{
+	float: right;
+	margin-right: 0.25rem;
+}

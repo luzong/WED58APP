@@ -1,0 +1,99 @@
+body{
+	background-color: #f1f2f6;
+}
+.fuwu-header{
+	height:1rem;
+	width: 7.2rem;
+	background:linear-gradient(to right,#e6454a,#ff894c);
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+.fuwu-header ul li{
+	color: #ffffff;
+	font-size: 0.3rem;
+	text-align: center;
+	line-height: 1rem;
+}
+.fa-2x{
+	padding-top: 1rem;
+	width: 7.2rem;
+	height: 1.5rem;
+	/*position: fixed;
+	margin-top: 1rem;*/
+}
+.fa-2x ul{
+	width: 7.2rem;
+	height: 1.5rem;
+	background-color: #FFFFFF;
+}
+.fa-2x ul li{
+	float: left;
+	color: #747d8c;
+	margin-top: 0.3rem;
+	margin-left: 0.4rem;
+	
+}
+.fa-2x ul li img{
+	width:0.8rem;
+	height: 0.8rem;
+}
+.fa-2x ul li:nth-child(2){
+	font-size: 0.3rem;
+	color: black;
+	margin-left: 0.3rem;
+}
+.fa-2x ul li:nth-child(3){
+	margin-left: 2.9rem;
+}
+.fa-2x ul li:nth-child(4){
+	margin-left: 1.5rem;
+	margin-top: 0.9rem;
+	position: fixed;
+}
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 7.2rem;
+	height: 1rem;
+	line-height: 0.5rem;
+	z-index: 10;
+	background: #fcfcfc;
+	text-align: center;
+	box-sizing: border-box;
+	border-top: 0.02rem solid #f8f8fa;
+	color: #999999;
+	font-size: 0.2rem;
+	margin-top: 1.08rem;
+}
+.footer .yanse{
+	color: #c62224;
+}
+.footer ul{
+	list-style: none;
+	width: 7.2rem;
+	height: 1rem;
+}
+.footer ul li{
+	width: 1.8rem;
+	float: left;
+}
+.footer li img{
+	height: 0.62rem;
+	width: 0.62rem;
+	margin-top: -0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

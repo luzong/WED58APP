@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>我的</title>
+    <link rel="stylesheet" type="text/css" href="css/commen.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+	<link rel="stylesheet" type="text/css" href="css/wode.css"/>
+	
+</head>
+<body>
+	
+	<div class="wode-denglu">
+		<ul>
+			<li><img src="img/wode2.jpg"/></li>
+			<li><img class="shezhi" src="img/wode3.jpg"/></li>
+			<li><span id="ljdl">立即登录</span></li>
+		</ul>
+	</div>
+	
+	
+	<div class="wode-concent">
+		<ul>
+			<li></li>
+			<li>我的订单<i class="fa fa-angle-right" aria-hidden="true"></i></li>
+			<li>
+				<i><img src="img/wode4.jpg"/></i>
+				<i><img src="img/wode5.jpg"/></i>
+				<i><img src="img/wode6.jpg"/></i>
+				<i><img src="img/wode7.jpg"/></i>
+			</li>
+			<li>收藏<i class="fa fa-angle-right" aria-hidden="true"></i></li>
+			<li>卡劵<i class="fa fa-angle-right" aria-hidden="true"></i></li>
+			<li>地址<i class="fa fa-angle-right" aria-hidden="true"></i></li>
+			<li>加盟<i class="fa fa-angle-right" aria-hidden="true"></i><p>
+				企业入住/个人发布
+			</p></li>
+			<li>帮助<i class="fa fa-angle-right" aria-hidden="true"></i></li>
+			
+		</ul>
+		
+	</div>
+	
+	<div class="footer">
+		<ul>
+			<li><img src="img/sy01.png"/><p>首页</p></li>
+			<li><img src="img/ffw01.png"/><p>发服务</p></li>
+			<li><img src="img/xx01.png"/><p>消息</p></li>
+			<li><img src="img/wd02.png"/><p class="yanse">我的</p></li>
+		</ul>
+	</div>
+	
+	
+</body>
+	<script type="text/javascript" src="js/buju.js"></script>
+	<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/link.js" ></script>
+	<script type="text/javascript">
+		var oPP = document.getElementById('ljdl');
+		var ljdl = sessionStorage.getItem('shh');	
+		console.log(ljdl);
+		if(ljdl!=null){
+			oPP.innerText=ljdl;			
+		}
+		
+	</script>
+</html>

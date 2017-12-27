@@ -1,0 +1,105 @@
+/*头部*/
+.fuwu-header{
+	height:1rem;
+	width: 7.2rem;
+	background:linear-gradient(to right,#e6454a,#ff894c);
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+.fuwu-header ul li{
+	color: #ffffff;
+	font-size: 0.3rem;
+	text-align: center;
+	line-height: 1rem;
+}
+/*中间部分*/
+.fuwu-content{
+	margin-top: 1.2rem;	
+	background: #ffffff;
+	width: 7.2rem;
+}
+.aul{
+	width: 6.64rem;
+	height: 0.66rem;
+	margin: 0 auto;
+	background: #eff0f2;
+	border-radius: 0.66rem;
+}
+.aul li{
+	font-size: 0.3rem;
+	float: left;
+	line-height: 0.66rem;
+	
+}
+.aul li i{
+	color: #41434b;
+	margin-left: 0.2rem;
+}
+.aul li:nth-child(2){
+	color: #828b98;
+	margin-left: 0.13rem;
+}
+.aul li input{
+	height: 0.4rem;
+	width: 5.6rem;
+	background: #eff0f2;
+	font-size: 0.3rem;
+	color: #828b98;
+	border: none;
+	outline: none;
+}
+.bul li{
+	width: 2.4rem;
+	float: left;
+	height: 1.8rem;
+	text-align: center;
+}
+.bul li:nth-child(-n+3){
+	margin-top: 0.3rem;
+}
+.bul li img{
+	width: 0.75rem;
+	height: 0.75rem;
+	margin-top: 0.3rem;
+}
+.bul li p{
+	margin-top: 0.1rem;
+	font-size: 0.25rem;
+}
+.m-b{
+	margin-bottom: 1rem;
+}
+/*footer*/
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 7.2rem;
+	height: 1rem;
+	line-height: 0.5rem;
+	z-index: 10;
+	background: #fcfcfc;
+	text-align: center;
+	box-sizing: border-box;
+	border-top: 0.02rem solid #f8f8fa;
+	color: #999999;
+	font-size: 0.2rem;
+	
+}
+.footer .yanse{
+	color: #c62224;
+}
+.footer ul{
+	list-style: none;
+	width: 7.2rem;
+	height: 1rem;
+}
+.footer ul li{
+	width: 1.8rem;
+	float: left;
+}
+.footer li img{
+	height: 0.62rem;
+	width: 0.62rem;
+	margin-top: -0.2rem;
+}

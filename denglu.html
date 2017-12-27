@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/commen.css" />
+		<link rel="stylesheet" href="css/font-awesome.css" />	
+		<link rel="stylesheet" href="css/denglu.css" />
+		<title>登录</title>
+	</head>
+	<body>
+		<div class="main">
+			<ul>
+				<li>
+					<img src="img/denglu_03.png" class="wode-tu" />
+				</li>
+				<li>登录</li>
+				<li>
+					<img src="img/denglu_07.png" />
+					<input type="text" id="inpt" class="tt" value="" placeholder="请输入手机号码"  onkeyup="value=value.replace(/[^\d]/g,'') " ng-pattern="/[^a-zA-Z]/"  maxlength="11"/>
+				</li>
+				<li id="oli" class="huise hongse"><p>下一步</p></li>
+				<li>点击“下一步”，即同意<span>《58到家用户协议》</span></li>
+				<li class="hr-one">
+					<hr/>
+				</li>
+				<li>使用第三方登录</li>
+				<li class="hr-two">
+					<hr />
+				</li>
+				<li>
+					<img id="wx-tu" src="img/denglu_11.png" />
+				</li>
+				<li>微信登录</li>
+			</ul>
+		</div>
+		<div id="div2">手机号不合法</div>
+	</body>
+	<script type="text/javascript" src="js/buju.js" ></script>
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	<script type="text/javascript" src="js/link.js" ></script>
+	<script type="text/javascript">
+		var oT = document.getElementById('inpt');
+		var oL = document.getElementById('oli');
+		var ooDD = document.getElementById('div2');
+		var wxtp = document.getElementById('wx-tu');
+		var ie = !-[1,];
+		var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/; 
+		var time=null;
+		var tim=null;
+		var iNum=0;
+		if(ie){
+			oT.onpropertychange = toChange;
+		}
+		else{
+			oT.oninput = toChange;
+		}
+		function toChange(){
+			if(oT.value.length==11){
+				oL.className = 'hongse';
+			}else{
+				oL.className = 'huise';
+			}			
+		}
+		oL.onclick = function(){
+			var val=oT.value;
+			sessionStorage.setItem('shh',val);
+			if(oT.value.length<11){
+				return false;
+			}
+		if(myreg.test(oT.value)) 
+		{ 
+			clearInterval(time);
+			time = setInterval(function(){
+				if(iNum==3){
+					clearInterval(time);
+					ooDD.style.display='none';
+					window.location.href="yanzheng.html";
+					iNum = 0;
+				}else{
+					iNum++;
+					ooDD.innerHTML = '发送成功';
+					ooDD.style.display='block';
+				}		
+			},400);			
+		    console.log(val)
+		}else{
+			clearInterval(time);
+			time = setInterval(function(){	
+				if(iNum==3){
+					clearInterval(time);
+					ooDD.style.display='none';
+					iNum = 0;
+				}else{
+					iNum++;
+					ooDD.innerHTML = '手机号不合法';
+					ooDD.style.display='block';						
+				}	
+			},400);	
+			console.log(oT.value)
+		}
+	};
+	wxtp.onclick = function(){
+		clearInterval(tim);
+		tim = setInterval(function(){
+			if(iNum==5){
+				clearInterval(tim);
+				ooDD.style.display='none';
+				iNum = 0;
+			}else{
+				iNum++;
+				if(iNum==1){
+				ooDD.innerHTML = '加载中';
+				}
+				if(iNum==2){
+				ooDD.innerHTML = '加载中·';
+				}
+				if(iNum==3){
+				ooDD.innerHTML = '加载中··';
+				}
+				if(iNum==4){
+				ooDD.innerHTML = '加载中···';
+				}
+				if(iNum==5){
+				ooDD.innerHTML = '加载失败';
+				}
+				ooDD.style.display='block';
+			}		
+		},600);			
+	}
+	</script>
+</html>

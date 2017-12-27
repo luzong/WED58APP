@@ -1,0 +1,134 @@
+/*头部*/
+.shouye2-tou{
+	width: 7.2rem;
+	height: 1rem;
+	background: #FFFFFF;
+	color: #000000;
+	font-size: 0.35rem;
+	text-align: center;
+	float: left;
+}
+.shouye2-tou ul{
+	width: 7.2rem;
+	height: 1rem;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.2rem;
+}
+.shouye2-tou ul li{
+	height: 1rem;
+	width: 1.5rem;
+	float: left;
+	
+}
+
+.shouye2-tou .jvli{
+	font-size: 0.3rem;
+	margin-top: 0.08rem;
+	width: 2.4rem;
+}
+.shouye2-zhong{
+	width: 100%;
+	height: 3.3rem;
+	border-bottom: 0.2rem solid #f0f1f5;
+}
+.shouye2-zhong img{
+	width: 7.2rem;
+	height: 2.3rem;
+}
+.sjwx{
+	height: 3.6rem;
+	width: 7.2rem;
+	border-bottom: 0.2rem solid #f0f1f5;	
+}
+.sjwx ul{
+	font-size: 0.3rem;
+	color: #e6454a;
+	margin-left: 0.4rem;
+	margin-top: 0.26rem;
+	display: flex;
+	flex-wrap:wrap;
+	align-content: flex-end;
+	
+}
+.sjwx ul p{
+	width: 7.2rem;
+	margin-bottom: 0.1rem;
+}
+.sjwx ul li{
+	width: 2.1rem;
+	height: 0.8rem;
+	font-size: 0.25rem;
+	color: #000000;
+	background-color: #fbfbfb;
+	text-align: center;
+	margin: 0.05rem;
+	line-height:0.8rem;
+}
+.dnwx{
+	height: 1.8rem;
+	width: 7.2rem;
+	border-bottom: 0.2rem solid #f0f1f5;	
+}
+.dnwx ul{
+	font-size: 0.3rem;
+	color: #e6454a;
+	margin-left: 0.4rem;
+	margin-top: 0.26rem;
+	display: flex;
+	flex-wrap:wrap;
+	align-content: flex-end;
+	
+}
+.dnwx ul p{
+	width: 7.2rem;
+	margin-bottom: 0.1rem;
+}
+.dnwx ul li{
+	width: 2.1rem;
+	height: 0.8rem;
+	font-size: 0.25rem;
+	color: #000000;
+	background-color: #fbfbfb;
+	text-align: center;
+	margin: 0.05rem;
+	line-height:0.8rem;
+}
+.smwx{
+	height: 1.8rem;
+	width: 7.2rem;
+	border-bottom: 0.2rem solid #f0f1f5;	
+}
+.smwx ul{
+	font-size: 0.3rem;
+	color: #e6454a;
+	margin-left: 0.4rem;
+	margin-top: 0.26rem;
+	display: flex;
+	flex-wrap:wrap;
+	align-content: flex-end;
+	
+}
+.smwx ul p{
+	width: 7.2rem;
+	margin-bottom: 0.1rem;
+}
+.smwx ul li{
+	width: 2.1rem;
+	height: 0.8rem;
+	font-size: 0.25rem;
+	color: #000000;
+	background-color: #fbfbfb;
+	text-align: center;
+	margin: 0.05rem;
+	line-height:0.8rem;
+	
+}
+.shouye2-bottom{
+	font-size: 0.25rem;
+	text-align: center;
+	margin-top: 0.2rem;
+}
+.shouye2-bottom img{
+	margin-bottom: 0.05rem;
+}

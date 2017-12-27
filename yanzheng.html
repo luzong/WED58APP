@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/commen.css" />
+		<link rel="stylesheet" href="css/font-awesome.css" />	
+		<link rel="stylesheet" href="css/yanzheng.css" />
+		<title>验证</title>
+	</head>
+	<body>
+		<div class="main">
+			<ul>
+				<li>
+					<img src="img/yanzheng_03.png" class="dl-tu"/>
+				</li>
+				<li>验证手机号</li>
+				<li>当前手机号<span id="sjhm">157****1278</span></li>
+				<li>
+					<img src="img/yanzheng_07.png" />
+					<input id="inp" type="text" placeholder="验证码" onkeyup="value=value.replace(/[^\d]/g,'') " ng-pattern="/[^a-zA-Z]/"  maxlength="6" />
+				</li>
+				<li><p id="h-p">获取验证码</p></li>
+				<li id="xyb" class="tu"><p>下一步</p></li>
+				<li>需注意：</li>
+			</ul>
+		</div>
+		<div class="wenzi">
+				<ul>
+					<li>1.更换手机后，您的会员卡、优惠劵、订单记录、积分、经验值、地址将全部转移至新手机号下，原手机号将清空信息；</li>
+					<li>2.请确保您的新手机号没有未完成的订单；</li>
+					<li>3.若您的新手机号有余额大于0的会员卡，您可以选择联系客服线下退款，或放弃所剩余额；</li>
+					<li>4.更换成功后须使用新手机号登录；</li>
+					<li>5.30天内最多进行3次手机号更换；</li>
+					<li>6.暂不能支持无法获取验证码的账户进行手机号更换；</li>
+					<li>7.有任何其它疑问均可致电客服或使用在线客服咨询。</li>
+				</ul>
+			</div>
+	</body>
+	<script type="text/javascript" src="js/buju.js" ></script>
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	<script type="text/javascript" src="js/link.js" ></script>
+	<script type="text/javascript">
+		var oP = document.getElementById('inp');
+		var oX = document.getElementById('xyb');
+		var oS = document.getElementById('sjhm');
+		var ie = !-[1,];
+		var sjh = sessionStorage.getItem('shh');		
+		oS.innerText=sjh.replace(/(.{3}).*(.{4})/,"$1****$2");
+		if(ie){
+			oP.onpropertychange = toChange;
+		}
+		else{
+			oP.oninput = toChange;
+		}
+		function toChange(){
+			if(oP.value==''){
+				oX.className = 'tu';
+			}else{
+				oX.className = 'wo';
+			}
+		}
+	</script>
+</html>
